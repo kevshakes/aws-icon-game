@@ -12,7 +12,9 @@ The AWS Service Icon Game is a simple yet engaging application that helps users 
 
 - Interactive GUI built with Tkinter
 - Comprehensive collection of AWS service icons (56 services)
-- Score tracking
+- **Single player and multiplayer modes**
+- **Player name customization**
+- **High score tracking**
 - Three lives gameplay mechanic
 - Game over screen with restart option
 - Services organized by AWS categories:
@@ -27,6 +29,20 @@ The AWS Service Icon Game is a simple yet engaging application that helps users 
   - Analytics
   - Machine Learning
   - API Services
+
+## Game Modes
+
+### Single Player
+- Enter your name and play solo
+- Try to identify as many AWS service icons as possible
+- Your score is saved to the high scores list
+
+### Multiplayer
+- Play with 2-6 players
+- Take turns identifying AWS service icons
+- Players lose lives for incorrect answers
+- Last player standing wins!
+- Final rankings based on scores
 
 ## Requirements
 
@@ -61,18 +77,24 @@ The AWS Service Icon Game is a simple yet engaging application that helps users 
 
 1. Run the game:
    ```
+   # For single player or multiplayer:
+   python aws_icon_game_multiplayer.py
+   
+   # For original single player only:
    python aws_icon_game.py
    ```
 
-2. You will be presented with an AWS service icon and three possible service names.
+2. Choose your game mode (single player or multiplayer)
 
-3. Click on the button with the name that matches the icon.
+3. Enter player name(s)
 
-4. If correct, your score increases and a new icon appears.
+4. You will be presented with an AWS service icon and three possible service names
 
-5. If incorrect, you lose a life. The game ends when you lose all three lives.
+5. Click on the button with the name that matches the icon
 
-6. After the game ends, you can choose to play again or quit.
+6. If correct, your score increases and a new icon appears
+
+7. If incorrect, you lose a life. The game ends when you lose all three lives (single player) or when only one player remains (multiplayer)
 
 ## Customizing the Game
 
